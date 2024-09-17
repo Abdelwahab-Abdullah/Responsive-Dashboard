@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    font-family: system-ui;
+}
+
+body {
+    background-color: #001;
+    display: flex;
+
+}
+
+.img-box {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #fff;
+    flex-shrink: 0;
+}
+.img-box img {
+    width: 100%;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+
+
+.menu {
+    background-color: #123;
+    width: 60px;
+    height: 103vh;
+    padding: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.menu:hover {
+    width: 260px;
+}
+
+ul {
+    list-style: none;
+    position: relative;
+    height: 95%;
+}
+
+ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transition: 0.5s;
+    border: 1px solid #123; 
+
+}
+ul li a:hover , .data-info .box:hover, td:hover  {
+    background-color: #00000059;
+    transform: scale(1.02);
+    border: 1px solid #fff; 
+}
+
+.log-out {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+.log-out a {
+    background-color: #0752b3 ;
+    transition: 2s;
+}
+.log-out a:hover {
+    background-color: rgba(255, 0, 0, 0.863);
+    transform: scale(1.1);
+}
+
+ul li a i{
+    font-size: 30px;
+} 
+.content {
+    width: 100%;
+    margin: 10px;
+}
+.title-info {
+    background-color: #0752b3;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.data-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.data-info .box {
+    height: 150px;
+    flex-basis: 150px;
+    flex-grow: 1;
+    background-color: #123;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid #123; 
+
+}
+
+.data-info .box i {
+    font-size: 40px;
+    text-align: center;
+}
+.data-info .box .data span {
+    font-size: 30px;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    border-spacing: 10px;
+}
+td, th {
+    background-color: #123;
+    height: 40px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 20px;
+    border: 1px solid #123; 
+
+}
+th {
+    background-color: #0752b3;
+}
